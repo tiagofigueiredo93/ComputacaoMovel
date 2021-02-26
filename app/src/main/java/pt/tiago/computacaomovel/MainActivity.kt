@@ -17,5 +17,6 @@ class MainActivity : AppCompatActivity() {
         //Método D adicionado pelo funcionário X
 
         //Test on requirement req_1 branch
+        //Test on requirement req_1 branch v1.1
     }
 }
