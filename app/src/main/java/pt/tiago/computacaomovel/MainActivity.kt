@@ -18,5 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         //Test on requirement req_1 branch
         //Test on requirement req_1 branch v1.1
+        //Test on requirement req_1 branch v2
     }
 }
