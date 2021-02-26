@@ -9,5 +9,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Adicionei o mentodo A
+
+        //Adicionei o mentodo B
+
+
     }
 }
