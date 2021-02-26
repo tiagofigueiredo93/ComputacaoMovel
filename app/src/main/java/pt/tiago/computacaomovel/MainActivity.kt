@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         //Adicionei o mentodo C
         
-        //Método D adicionado pelo funcionário X 
+        //Método D adicionado pelo funcionário X
+
+        //Test on requirement req_1 branch
     }
 }
