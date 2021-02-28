@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/file"
+        android:title="@string/file"
+        app:showAsAction="always">
+        <!--    "file" subMenu-->
+
+        <menu>
+            <item android:id="@+id/create_new"
+                android:title="@string/create_new"
+                android:icon="@drawable/ic_launcher_foreground"/>
+            <item android:id="@+id/open"
+                android:title="@string/open"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/opcao2"
+        android:title="Opção2"
+        app:showAsAction="never">
+
+    </item>
+
+    <item android:id="@+id/opcao3"
+        android:title="Opção3"
+        app:showAsAction="never">
+
+    </item>
+
+    <item android:id="@+id/opcao4"
+        android:title="Opção4"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+
+
+
+</menu>
