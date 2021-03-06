@@ -1,11 +1,15 @@
 package pt.tiago.computacaomovel
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -19,8 +23,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, R.string.welcome, Toast.LENGTH_SHORT).show()
+        val sharedPref: SharedPreferences = getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE)
 
+        val soundValue = sharedPref.getBoolean(getString(R.string.sound), false)
+        Log.d("***SHAREDPREF", "Read $soundValue")
 
+        if(soundValue){
+            findViewById<CheckBox>(R.id.checkBox).isChecked = true
+        }
+
+    }
+
+    fun checkBoxClicked(view: View){
+        if (view is CheckBox){
+
+            val sharedPref: SharedPreferences = getSharedPreferences(
+                    getString(R.string.preference_file_key), Context.MODE_PRIVATE)
+            with(sharedPref.edit()){
+                putBoolean(getString(R.string.sound), view.isChecked)
+                commit()
+            }
+            Log.d("***SHAREDPREF", "Change to ${view.isChecked}")
+        }
     }
 
     fun button2(view: View) {

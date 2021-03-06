@@ -5,4 +5,6 @@
     <string name="file">Ficheiro</string>
     <string name="create_new">Criar novo</string>
     <string name="open">Abrir</string>
+    <string name="preference_file_key">ficheiro</string>
+    <string name="sound">som</string>
 </resources>

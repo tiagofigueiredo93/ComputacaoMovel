@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">ComputacaoMovel</string>
-    <string name="welcome" translatable="false">Welcome to the app</string>
+    <string name="welcome">Welcome to the app</string>
     <string name="file">file</string>
     <string name="create_new">Create new</string>
     <string name="open">Open</string>
+    <string name="preference_file_key">file1</string>
+    <string name="sound">sound</string>
 </resources>

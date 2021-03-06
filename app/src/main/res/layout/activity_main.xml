@@ -61,6 +61,16 @@
         android:inputType="text"
         android:hint="Enter something"/>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_alignRight="@id/editTextTextPersonName"
+        android:text="Checked"
+        android:onClick="checkBoxClicked"
+        android:id="@+id/checkBox"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
